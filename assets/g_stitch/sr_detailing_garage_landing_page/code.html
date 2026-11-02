@@ -1,0 +1,832 @@
+<!DOCTYPE html><html class="dark" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>SR Detailing Garage | Estética &amp; Mecánica Integral</title>
+<!-- Google Fonts: Space Grotesk, Rajdhani, Chivo -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;family=Rajdhani:wght@500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: "#0c0505",
+              deep: "#111111",
+              burgundy: "#350a06",
+              crimson: "#56070c",
+              primary: "#8f3d38",
+              card: "#181313",
+              cardborder: "#56070c",
+              muted: "#8c8c8c",
+              dim: "#666666",
+              textlight: "#e5e5e5"
+            }
+          },
+          fontFamily: {
+            tech: ['"Rajdhani"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+            body: ['"Chivo"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    @layer base {
+      html, body {
+        background-color: #0c0505;
+        color: #ffffff;
+        scroll-behavior: smooth;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0c0505;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #350a06;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #56070c;
+      }
+    }
+    .dark-glow {
+      box-shadow: 0 0 30px rgba(86, 7, 12, 0.45);
+    }
+    .red-glow-btn {
+      box-shadow: 0 0 20px rgba(143, 61, 56, 0.5);
+    }
+    .card-border-glow {
+      border: 1px solid rgba(86, 7, 12, 0.7);
+      transition: all 0.3s ease;
+    }
+    .card-border-glow:hover {
+      border-color: #8f3d38;
+      box-shadow: 0 0 25px rgba(143, 61, 56, 0.3);
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body class="bg-[#0c0505] text-[#ffffff] font-body selection:bg-[#8f3d38] selection:text-white antialiased overflow-x-hidden min-h-screen relative">
+<!-- BACKGROUND RADIAL GLOWS (DARK LUXURY AUTOMOTIVE) -->
+<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+<div class="absolute -top-40 -left-40 w-[650px] h-[650px] bg-[#350a06] rounded-full blur-[170px] opacity-40"></div>
+<div class="absolute top-1/3 -right-40 w-[700px] h-[700px] bg-[#56070c] rounded-full blur-[200px] opacity-30"></div>
+<div class="absolute bottom-10 left-1/4 w-[800px] h-[500px] bg-[#1a0507] rounded-full blur-[180px] opacity-60"></div>
+<div class="absolute inset-0 bg-[radial-gradient(#56070c_1px,transparent_1px)] [background-size:36px_36px] opacity-10"></div>
+</div>
+<!-- FIXED LUXURY NAVBAR -->
+<header class="fixed top-0 left-0 w-full z-50 bg-[#111111]/90 backdrop-blur-md border-b border-[#56070c]/50 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between gap-6">
+<!-- LOGO -->
+<a class="flex items-center gap-3.5 group" href="#"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNM3y-cU6IPHNNyBDAoinh3CY7gTZoNWx5CQIjkpTps3GReJATg3WNCMNE3CVgBGsfUsz-Rj7p3BfxwYAR13y31J68t223ZTfu6P19Ehy-MHjVDXf6cL24iz-Vnwh0ePza7hvjZ0gf90SWxFr_uAi7NG1hwj-nQu6YJnH0f4ga7uSOujXjTPLY8SVwvbmvmHWUuHBJC79PALAUP-wcetXGJi_rJxcd6cSZk62xHZbtqOfGGtERYDKU_Q" alt="SR Detailing Garage" class="w-12 h-12 rounded-full object-cover border-2 border-[#8f3d38] shadow-[0_0_12px_rgba(143,61,56,0.5)] shrink-0"><div class="hidden sm:flex flex-col"><div class="flex items-center gap-2"><span class="font-tech text-xl font-bold tracking-wider text-white uppercase group-hover:text-red-300 transition-colors">SR DETAILING</span><span class="px-1.5 py-0.5 text-[10px] font-tech font-bold uppercase rounded bg-[#56070c] text-[#ffdad6] tracking-widest border border-[#8f3d38]/50">GARAGE</span></div><span class="text-[11px] font-tech tracking-[0.2em] text-[#8c8c8c] uppercase">Estética &amp; Mecánica Integral</span></div></a>
+<!-- NAVIGATION LINKS -->
+<nav class="hidden lg:flex items-center gap-8 font-tech text-base tracking-widest uppercase">
+<a class="text-white hover:text-[#8f3d38] transition-colors flex items-center gap-1.5 border-b-2 border-[#8f3d38] pb-1" href="#inicio">
+<span class="">Inicio</span>
+</a>
+<a class="text-[#8c8c8c] hover:text-white transition-colors pb-1" href="#servicios">
+<span class="">Servicios &amp; Tarifas</span>
+</a>
+<a class="text-[#8c8c8c] hover:text-white transition-colors pb-1" href="#garantia">
+<span class="">Pilares</span>
+</a>
+<a class="text-[#8c8c8c] hover:text-white transition-colors pb-1" href="#trabajos">
+<span class="">Trabajos Realizados</span>
+</a>
+<a class="text-[#8c8c8c] hover:text-white transition-colors pb-1" href="#contacto">
+<span class="">Taller &amp; Contacto</span>
+</a>
+</nav>
+<!-- HEADER CTA BUTTON -->
+<div class="flex items-center gap-4">
+<a class="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-[#8f3d38] hover:bg-[#a64842] text-white font-tech font-bold uppercase tracking-wider text-sm shadow-[0_0_18px_rgba(143,61,56,0.65)] hover:shadow-[0_0_24px_rgba(143,61,56,0.9)] transition-all transform hover:-translate-y-0.5 border border-[#ffdad6]/20" href="https://wa.me/56945700131?text=Hola,%20quisiera%20cotizar%20un%20servicio%20para%20mi%20auto" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[19px]">chat</span>
+<span class="">Cotizar por WhatsApp</span>
+</a>
+</div>
+</div>
+</header>
+<main class="relative z-10 pt-20">
+<!-- HERO SECTION (WIDE DESKTOP CINEMATIC) -->
+<section class="relative min-h-[calc(100vh-80px)] flex items-center py-16 lg:py-24 border-b border-[#56070c]/40 overflow-hidden" id="inicio">
+<div class="max-w-7xl mx-auto px-6 lg:px-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+<!-- Left Column: Copy & CTAs -->
+<div class="lg:col-span-7 space-y-7">
+<!-- Tag Badge -->
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#1c1515] border border-[#56070c] text-white shadow-inner">
+<span class="w-2.5 h-2.5 rounded-full bg-[#8f3d38] animate-ping"></span>
+<span class="w-2 h-2 rounded-full bg-[#8f3d38] -ml-4"></span>
+<span class="font-tech text-xs tracking-[0.25em] text-[#e5e5e5] uppercase font-bold">ESTÉTICA &amp; MECÁNICA INTEGRAL • SAN JOAQUÍN, SANTIAGO</span>
+</div>
+<!-- Main Headline -->
+<div class="space-y-2">
+<h1 class="font-tech text-5xl sm:text-6xl lg:text-7xl font-bold uppercase tracking-tight text-white leading-[1.05]">
+              CUIDAMOS CADA DETALLE,<br>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#ffffff] via-[#8f3d38] to-[#ffb4a9] drop-shadow-[0_0_25px_rgba(143,61,56,0.5)]">
+                REFLEJAMOS TU PASIÓN
+              </span>
+</h1>
+<p class="text-[#8c8c8c] text-lg lg:text-xl font-normal leading-relaxed pt-2 max-w-2xl">
+              Taller de alta precisión automotriz. Especialistas certificados en corrección de pintura, sellados cerámicos 9H, lavado de tapiz con inyección térmica y mantenciones preventivas con lubricantes sintéticos OEM.
+            </p>
+</div>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center gap-5 pt-2">
+<a class="inline-flex items-center gap-3 px-8 py-4 rounded-lg bg-[#8f3d38] hover:bg-[#a34641] text-white font-tech font-bold uppercase tracking-wider text-base red-glow-btn transition-all border border-[#ffdad6]/20" href="https://wa.me/56945700131?text=Hola,%20deseo%20agendar%20una%20atenci%C3%B3n%20en%20SR%20Detailing%20Garage" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+<span class="">Agendar por WhatsApp (+56 9 4570 0131)</span>
+</a>
+<a class="inline-flex items-center gap-2.5 px-7 py-4 rounded-lg bg-[#181313] hover:bg-[#201919] text-white font-tech font-bold uppercase tracking-wider text-base border border-[#56070c] hover:border-[#8f3d38] transition-all" href="#servicios">
+<span class="material-symbols-outlined text-[#8f3d38] text-[20px]">tune</span>
+<span class="">Ver Servicios &amp; Precios</span>
+</a>
+</div>
+<!-- Metrics Row -->
+<div class="grid grid-cols-3 gap-5 pt-6 max-w-2xl border-t border-[#350a06]/80">
+<div class="p-4 rounded-lg bg-[#161616]/90 border border-[#56070c]/50">
+<span class="font-tech text-3xl lg:text-4xl font-bold text-white tracking-wider block">+500</span>
+<span class="font-tech text-xs tracking-widest text-[#8c8c8c] uppercase mt-0.5 block">Autos Atendidos</span>
+</div>
+<div class="p-4 rounded-lg bg-[#161616]/90 border border-[#56070c]/50">
+<span class="font-tech text-3xl lg:text-4xl font-bold text-[#8f3d38] tracking-wider block">100%</span>
+<span class="font-tech text-xs tracking-widest text-[#8c8c8c] uppercase mt-0.5 block">Garantía Total</span>
+</div>
+<div class="p-4 rounded-lg bg-[#161616]/90 border border-[#56070c]/50">
+<span class="font-tech text-3xl lg:text-4xl font-bold text-white tracking-wider block">LUN - DOM</span>
+<span class="font-tech text-xs tracking-widest text-[#8c8c8c] uppercase mt-0.5 block">Atención Taller</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Workshop Showcase Poster -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-2xl overflow-hidden bg-[#161616] p-1 border-2 border-[#56070c] shadow-[0_0_40px_rgba(86,7,12,0.6)] group">
+<!-- Atmospheric Badge Header -->
+<div class="absolute top-4 left-4 z-20 flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#111111]/85 backdrop-blur-md border border-[#8f3d38]/50">
+<span class="w-2 h-2 rounded-full bg-[#8f3d38]"></span>
+<span class="font-tech text-xs font-bold uppercase tracking-wider text-white">Catálogo SR Detailing Pro</span>
+</div>
+<!-- Image Media -->
+<div class="relative h-[530px] w-full overflow-hidden rounded-xl">
+<img alt="SR Detailing Garage Mustang Deportivo y Catálogo" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 brightness-95 contrast-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvt5edS8_8a_mzD6G-l7NHhB-76FN4sodMJSGKVkzcMTYNUoSSZO0_vrOqTRp1wBn31mMpfY-iH3ZchMJ7ZJIwbkylw9waN2cZPE9OGERvajA3Ea9cgnvvFuHMkXF91YHh5vqbNQuCq6NZZucsYkSMIbY0NmS8z3KcIs0ImQxxlvFpwVpII2unuJbRAMw_9Y_3yA-b8CMW-r7iYaY_dowhNJlzmfYuT6c3p_3Dd9h8kOSluLZYIrHTQg">
+<!-- Vignette Gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-[#0c0505] via-transparent to-black/20"></div>
+</div>
+<!-- Bottom Floating Tag -->
+<div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-[#111111]/90 backdrop-blur-md border border-[#56070c] flex items-center justify-between">
+<div>
+<span class="font-tech text-sm font-bold uppercase text-white tracking-wide block">Taller Especializado Santiago</span>
+<span class="text-xs text-[#8c8c8c] flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-[#8f3d38]">location_on</span>
+                  San Joaquín • Acabados Espejo 9H
+                </span>
+</div>
+<a class="px-3 py-1 rounded bg-[#56070c] hover:bg-[#8f3d38] text-white font-tech text-xs font-bold uppercase tracking-wider transition-colors" href="https://instagram.com/sr_detailing_garage" rel="noopener noreferrer" target="_blank">
+                @sr_detailing_garage
+              </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4 PILARES / BASTIÓN DE GARANTÍA -->
+<section class="py-12 bg-gradient-to-b from-[#111111] to-[#0c0505] border-b border-[#350a06]/80" id="garantia">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Pilar 1 -->
+<div class="p-6 rounded-xl bg-[#181313] border border-[#56070c] flex items-start gap-4 hover:border-[#8f3d38] transition-all group">
+<div class="w-12 h-12 rounded-lg bg-[#350a06] border border-[#56070c] group-hover:bg-[#8f3d38] transition-colors flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-white text-[26px]">verified</span>
+</div>
+<div>
+<h4 class="font-tech text-xl font-bold uppercase text-white tracking-wide">Calidad en Detalle</h4>
+<p class="text-sm text-[#8c8c8c] mt-1 leading-snug">Insumos y compuestos premium alemanes y americanos en cada centímetro.</p>
+</div>
+</div>
+<!-- Pilar 2 -->
+<div class="p-6 rounded-xl bg-[#181313] border border-[#56070c] flex items-start gap-4 hover:border-[#8f3d38] transition-all group">
+<div class="w-12 h-12 rounded-lg bg-[#350a06] border border-[#56070c] group-hover:bg-[#8f3d38] transition-colors flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-white text-[26px]">lock_reset</span>
+</div>
+<div>
+<h4 class="font-tech text-xl font-bold uppercase text-white tracking-wide">Confianza Total</h4>
+<p class="text-sm text-[#8c8c8c] mt-1 leading-snug">Diagnósticos transparentes con evidencia fotográfica y repuestos OEM garantizados.</p>
+</div>
+</div>
+<!-- Pilar 3 -->
+<div class="p-6 rounded-xl bg-[#181313] border border-[#56070c] flex items-start gap-4 hover:border-[#8f3d38] transition-all group">
+<div class="w-12 h-12 rounded-lg bg-[#350a06] border border-[#56070c] group-hover:bg-[#8f3d38] transition-colors flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-white text-[26px]">engineering</span>
+</div>
+<div>
+<h4 class="font-tech text-xl font-bold uppercase text-white tracking-wide">Técnicos Pro</h4>
+<p class="text-sm text-[#8c8c8c] mt-1 leading-snug">Mano de obra experta en estética avanzada y mecánica con scanner multimarcas.</p>
+</div>
+</div>
+<!-- Pilar 4 -->
+<div class="p-6 rounded-xl bg-[#181313] border border-[#56070c] flex items-start gap-4 hover:border-[#8f3d38] transition-all group">
+<div class="w-12 h-12 rounded-lg bg-[#350a06] border border-[#56070c] group-hover:bg-[#8f3d38] transition-colors flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-white text-[26px]">near_me</span>
+</div>
+<div>
+<h4 class="font-tech text-xl font-bold uppercase text-white tracking-wide">San Joaquín</h4>
+<p class="text-sm text-[#8c8c8c] mt-1 leading-snug">Arquitecto Brunelleschi #3509. Ubicación estratégica y segura en Santiago.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CATÁLOGO DE SERVICIOS (DESKTOP 4-COLUMN HORIZONTAL GRID) -->
+<section class="py-20 lg:py-28 relative" id="servicios">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<!-- Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="space-y-3 max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#350a06] border border-[#56070c] text-white">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px]">build_circle</span>
+<span class="font-tech text-xs tracking-[0.2em] font-bold uppercase text-[#ffdad6]">CATÁLOGO ESPECIALIZADO DE TALLER</span>
+</div>
+<h2 class="font-tech text-4xl lg:text-5xl font-bold uppercase tracking-tight text-white">
+              SERVICIOS INTEGRALES DE PRECISIÓN
+            </h2>
+<p class="text-[#8c8c8c] text-base font-normal">
+              Estándares de alto rendimiento automotriz bajo un mismo taller. Cada vehículo recibe tratamiento personalizado y garantía comprobada.
+            </p>
+</div>
+<div class="flex items-center gap-3 px-4 py-2 rounded-lg bg-[#181313] border border-[#56070c] text-[#e5e5e5] font-tech text-sm tracking-wider uppercase">
+<span class="material-symbols-outlined text-[#8f3d38] text-[20px]">flash_on</span>
+<span class="">Cotización Inmediata sin compromiso</span>
+</div>
+</div>
+<!-- 4 Wide Columns -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
+<!-- SERVICIO 1: DETAILING & ESTÉTICA -->
+<div class="card-border-glow rounded-xl bg-[#181313] p-7 flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#56070c] via-[#8f3d38] to-[#56070c]"></div>
+<div>
+<div class="flex items-center justify-between mb-5">
+<div class="w-12 h-12 rounded-lg bg-[#111111] border border-[#56070c] flex items-center justify-center text-[#8f3d38] group-hover:text-white group-hover:bg-[#8f3d38] transition-all">
+<span class="material-symbols-outlined text-[28px]">auto_fix_high</span>
+</div>
+<span class="px-2.5 py-0.5 rounded text-[11px] font-tech font-bold uppercase bg-[#350a06] text-[#ffdad6] border border-[#56070c]">Detailing Pro</span>
+</div>
+<h3 class="font-tech text-2xl font-bold uppercase text-white tracking-wide mb-2">Estética Automotriz</h3>
+<p class="text-xs text-[#8c8c8c] leading-relaxed mb-6">Restauración estética exterior e interior con químicos certificados internacionales.</p>
+<ul class="space-y-3 text-sm text-[#e5e5e5] mb-8">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Sellado cerámico profesional (2 a 4 años)</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Pulido técnico de pintura (2 a 3 fases)</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Lavado de tapiz vapor e inyección</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Restauración y pulido de ópticos</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Acondicionador cerámico de plásticos</span>
+</li>
+</ul>
+</div>
+<div class="pt-5 border-t border-[#350a06] mt-auto">
+<div class="mb-4">
+<span class="text-[11px] font-tech uppercase tracking-widest text-[#8c8c8c] block">Inversión Desde</span>
+<div class="font-tech text-2xl font-bold text-white tracking-wider flex items-baseline gap-2">
+<span class="">$80.000</span>
+<span class="text-xs font-normal text-[#8c8c8c]">| Cerámico $150.000</span>
+</div>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-[#8f3d38] hover:bg-[#a64842] text-white font-tech font-bold uppercase tracking-wider text-sm transition-all shadow-[0_0_12px_rgba(143,61,56,0.4)]" href="https://wa.me/56945700131?text=Hola,%20deseo%20cotizar%20Est%C3%A9tica%20Automotriz%20y%20Sellado%20Cer%C3%A1mico" rel="noopener noreferrer" target="_blank">
+<span class="">Cotizar este servicio</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- SERVICIO 2: MANTENCIÓN INTEGRAL -->
+<div class="card-border-glow rounded-xl bg-[#181313] p-7 flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#56070c] via-[#8f3d38] to-[#56070c]"></div>
+<div>
+<div class="flex items-center justify-between mb-5">
+<div class="w-12 h-12 rounded-lg bg-[#111111] border border-[#56070c] flex items-center justify-center text-[#8f3d38] group-hover:text-white group-hover:bg-[#8f3d38] transition-all">
+<span class="material-symbols-outlined text-[28px]">oil_barrel</span>
+</div>
+<span class="px-2.5 py-0.5 rounded text-[11px] font-tech font-bold uppercase bg-[#350a06] text-[#ffdad6] border border-[#56070c]">Preventiva</span>
+</div>
+<h3 class="font-tech text-2xl font-bold uppercase text-white tracking-wide mb-2">Mantención Integral</h3>
+<p class="text-xs text-[#8c8c8c] leading-relaxed mb-6">Mantenimiento riguroso por kilometraje con fluidos sintéticos de alto rendimiento.</p>
+<ul class="space-y-3 text-sm text-[#e5e5e5] mb-8">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Aceite 5w30 Full Sintético + Filtro</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Filtro de aire de motor y cabina</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Diagnóstico computarizado escáner</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Revisión de bujías e inyectores</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Inspección de niveles y fugas</span>
+</li>
+</ul>
+</div>
+<div class="pt-5 border-t border-[#350a06] mt-auto">
+<div class="mb-4">
+<span class="text-[11px] font-tech uppercase tracking-widest text-[#8c8c8c] block">Inversión Desde</span>
+<div class="font-tech text-2xl font-bold text-white tracking-wider flex items-baseline gap-2">
+<span class="">$110.000</span>
+<span class="text-xs font-normal text-[#8c8c8c]">/ $120.000</span>
+</div>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-[#8f3d38] hover:bg-[#a64842] text-white font-tech font-bold uppercase tracking-wider text-sm transition-all shadow-[0_0_12px_rgba(143,61,56,0.4)]" href="https://wa.me/56945700131?text=Hola,%20deseo%20cotizar%20Mantenci%C3%B3n%20Automotriz%20Preventiva" rel="noopener noreferrer" target="_blank">
+<span class="">Cotizar este servicio</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- SERVICIO 3: FRENOS Y MECÁNICA -->
+<div class="card-border-glow rounded-xl bg-[#181313] p-7 flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#56070c] via-[#8f3d38] to-[#56070c]"></div>
+<div>
+<div class="flex items-center justify-between mb-5">
+<div class="w-12 h-12 rounded-lg bg-[#111111] border border-[#56070c] flex items-center justify-center text-[#8f3d38] group-hover:text-white group-hover:bg-[#8f3d38] transition-all">
+<span class="material-symbols-outlined text-[28px]">speed</span>
+</div>
+<span class="px-2.5 py-0.5 rounded text-[11px] font-tech font-bold uppercase bg-[#350a06] text-[#ffdad6] border border-[#56070c]">Seguridad</span>
+</div>
+<h3 class="font-tech text-2xl font-bold uppercase text-white tracking-wide mb-2">Frenos &amp; Mecánica</h3>
+<p class="text-xs text-[#8c8c8c] leading-relaxed mb-6">Sistemas de rodado, frenado de alta respuesta y suspensión calibrada al detalle.</p>
+<ul class="space-y-3 text-sm text-[#e5e5e5] mb-8">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Cambio de pastillas y discos de freno</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Amortiguadores, cazoletas y terminales</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Tren delantero, fuelles y homocinéticas</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Bujías especiales cobre / iridio</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Calibración de frenos y purgado</span>
+</li>
+</ul>
+</div>
+<div class="pt-5 border-t border-[#350a06] mt-auto">
+<div class="mb-4">
+<span class="text-[11px] font-tech uppercase tracking-widest text-[#8c8c8c] block">Inversión Desde</span>
+<div class="font-tech text-2xl font-bold text-white tracking-wider flex items-baseline gap-2">
+<span class="">A Medida</span>
+<span class="text-xs font-normal text-[#8c8c8c]">/ Evaluación Express</span>
+</div>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-[#8f3d38] hover:bg-[#a64842] text-white font-tech font-bold uppercase tracking-wider text-sm transition-all shadow-[0_0_12px_rgba(143,61,56,0.4)]" href="https://wa.me/56945700131?text=Hola,%20deseo%20cotizar%20Frenos%20y%20Mec%C3%A1nica%20General" rel="noopener noreferrer" target="_blank">
+<span class="">Cotizar este servicio</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- SERVICIO 4: PINTURA DE CALIPERS & LLANTAS -->
+<div class="card-border-glow rounded-xl bg-[#181313] p-7 flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#56070c] via-[#8f3d38] to-[#56070c]"></div>
+<div>
+<div class="flex items-center justify-between mb-5">
+<div class="w-12 h-12 rounded-lg bg-[#111111] border border-[#56070c] flex items-center justify-center text-[#8f3d38] group-hover:text-white group-hover:bg-[#8f3d38] transition-all">
+<span class="material-symbols-outlined text-[28px]">format_paint</span>
+</div>
+<span class="px-2.5 py-0.5 rounded text-[11px] font-tech font-bold uppercase bg-[#350a06] text-[#ffdad6] border border-[#56070c]">Custom Pro</span>
+</div>
+<h3 class="font-tech text-2xl font-bold uppercase text-white tracking-wide mb-2">Pintura &amp; Calipers</h3>
+<p class="text-xs text-[#8c8c8c] leading-relaxed mb-6">Acabados térmicos nivel competición resistente al calor extremo y desgaste.</p>
+<ul class="space-y-3 text-sm text-[#e5e5e5] mb-8">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Pintura caliper de alta temperatura</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Rojo Brembo, amarillo, azul o custom</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Logotipo personalizado bajo laca</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Limpieza y descontaminado químico</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Pintura y restauración de llantas</span>
+</li>
+</ul>
+</div>
+<div class="pt-5 border-t border-[#350a06] mt-auto">
+<div class="mb-4">
+<span class="text-[11px] font-tech uppercase tracking-widest text-[#8c8c8c] block">Inversión Desde</span>
+<div class="font-tech text-2xl font-bold text-white tracking-wider flex items-baseline gap-2">
+<span class="">$60.000</span>
+<span class="text-xs font-normal text-[#8c8c8c]">/ Set Calipers</span>
+</div>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-[#8f3d38] hover:bg-[#a64842] text-white font-tech font-bold uppercase tracking-wider text-sm transition-all shadow-[0_0_12px_rgba(143,61,56,0.4)]" href="https://wa.me/56945700131?text=Hola,%20deseo%20cotizar%20Pintura%20de%20Calipers%20y%20Llantas" rel="noopener noreferrer" target="_blank">
+<span class="">Cotizar este servicio</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TRABAJOS REALIZADOS (SHOWCASE GALERÍA DE ESCRITORIO CON IMÁGENES REALES) -->
+<section class="py-20 bg-[#111111]/80 border-t border-b border-[#350a06]" id="trabajos">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#350a06] border border-[#56070c] text-white">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px]">photo_camera</span>
+<span class="font-tech text-xs tracking-[0.2em] font-bold uppercase text-[#ffdad6]">PROYECTOS Y RESULTADOS REALES</span>
+</div>
+<h2 class="font-tech text-4xl lg:text-5xl font-bold uppercase tracking-tight text-white">
+            TRABAJOS REALIZADOS EN TALLER
+          </h2>
+<p class="text-[#8c8c8c] text-base">
+            Cada trabajo entregado en nuestras instalaciones en San Joaquín es reflejo de dedicación milimétrica, acabados de espejo y satisfacción garantizada.
+          </p>
+</div>
+<!-- Desktop Showcase Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Calipers de Alta Temp (IMAGE_10) -->
+<div class="rounded-xl overflow-hidden bg-[#181313] border border-[#56070c] group hover:border-[#8f3d38] transition-all">
+<div class="h-80 w-full overflow-hidden relative">
+<img alt="Pintura de Calipers Profesional Roja Brembo" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 filter brightness-95" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxf4izyW8F6UhsvY-qlnLXSrdPGLO7Sgh95hULuuRvgdEsnrC9aFzz5dLeSGi0_kbqhzzYCJlaZT4CvQbQWemDoGGSBb0y106603wxXjrrpwDH2_Y0Ih__HMBfXW_i0br9aJdBbYJ878ten5C9Liecs8UEfDRKXhDlkWNG3vxAXzBbO_nsjyEEhKANnahTsayGbSzia9Gnx8QfmbpPEsV47U1lK2ephopLUZSTg9BTQ-ziYzmym_qI1g">
+<div class="absolute inset-0 bg-gradient-to-t from-[#181313] via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 px-3 py-1 rounded bg-[#56070c]/90 backdrop-blur-sm text-white font-tech text-xs font-bold uppercase tracking-wider border border-[#8f3d38]/50">
+                Pintura Caliper Brembo Look
+              </span>
+</div>
+<div class="p-6">
+<h4 class="font-tech text-2xl font-bold uppercase text-white tracking-wide">Pintura Térmica de Calipers</h4>
+<p class="text-sm text-[#8c8c8c] mt-2">Descontaminación con lijado profundo, bases térmicas y laca bicapa resistente a frenadas intensas.</p>
+<div class="mt-4 pt-4 border-t border-[#350a06] flex items-center justify-between">
+<span class="text-xs text-[#8f3d38] font-tech uppercase font-bold tracking-wider">Desde $60.000</span>
+<span class="text-xs text-[#8c8c8c]">San Joaquín</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Sellados Cerámicos 9H Flota (IMAGE_6) -->
+<div class="rounded-xl overflow-hidden bg-[#181313] border border-[#56070c] group hover:border-[#8f3d38] transition-all">
+<div class="h-80 w-full overflow-hidden relative">
+<img alt="Flota de vehículos con Sellado Cerámico SR Detailing" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-95" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4xVOXQQMn0Bh7kTQK_MTc3m3KrmNLhYf0qxBS-rUug7SSymZ4fs4mxVELtOJbJa6k36AaT87Zhf21Rik5VgmBwhuuPC--kV_rqdv7lJtPKYFCptxZ2I7tWOEhB0ZsnNTQqb5rafXY-L4jlX-6_JKosqErJ6Zv1fQ52xE1ucub17CUWIMqCirZc8YL7eBqSqI14YbPUnRyjs01tSZDM-r5K9JMNfYMLbqZ2M9IPjOOPKpjHfW9SNgvPg">
+<div class="absolute inset-0 bg-gradient-to-t from-[#181313] via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 px-3 py-1 rounded bg-[#56070c]/90 backdrop-blur-sm text-white font-tech text-xs font-bold uppercase tracking-wider border border-[#8f3d38]/50">
+                Sellado Cerámico Multimarca
+              </span>
+</div>
+<div class="p-6">
+<h4 class="font-tech text-2xl font-bold uppercase text-white tracking-wide">Brillo Espejo &amp; Protección 9H</h4>
+<p class="text-sm text-[#8c8c8c] mt-2">Tratamientos cerámicos con 2 a 4 años de protección hidrofóbica total frente a rayos UV y suciedad.</p>
+<div class="mt-4 pt-4 border-t border-[#350a06] flex items-center justify-between">
+<span class="text-xs text-[#8f3d38] font-tech uppercase font-bold tracking-wider">Garantía Escrita</span>
+<span class="text-xs text-[#8c8c8c]">Curado Controlado</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Mantención y Lavado de Tapiz (IMAGE_13) -->
+<div class="rounded-xl overflow-hidden bg-[#181313] border border-[#56070c] group hover:border-[#8f3d38] transition-all">
+<div class="h-80 w-full overflow-hidden relative">
+<img alt="Mantención Automotriz y Lavado de Tapiz SR Detailing Garage" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 filter brightness-95" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBubnlm_9K28Aawj13vm5VJvFJrH222R5t-16rQWvgShjA1CUziVsAFeWQFMSvFK7KupEp5lOx254JxKM0vJi3lM8JtzoRARUpGzwBLNTAeg0o1lEMJ7msWHNf-JaPsfxiC8XUid6LP5rok0WuzRXvE_REE5ExlmHHt_FUZubMLLyCsLurNRHhsK188Wx3lQvVOUR9_AEujk3BV7LK0dHiD7KIJrxaD4bQPuQdf1Pqi7DPMT-FVpIc1uw">
+<div class="absolute inset-0 bg-gradient-to-t from-[#181313] via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 px-3 py-1 rounded bg-[#56070c]/90 backdrop-blur-sm text-white font-tech text-xs font-bold uppercase tracking-wider border border-[#8f3d38]/50">
+                Mantención &amp; Tapiz
+              </span>
+</div>
+<div class="p-6">
+<h4 class="font-tech text-2xl font-bold uppercase text-white tracking-wide">Cuidado Interior y Motor</h4>
+<p class="text-sm text-[#8c8c8c] mt-2">Inyección y extracción de vapor para tapicería, y lubricación sintética 5w30 con cambio de filtros.</p>
+<div class="mt-4 pt-4 border-t border-[#350a06] flex items-center justify-between">
+<span class="text-xs text-[#8f3d38] font-tech uppercase font-bold tracking-wider">Tapiz desde $80.000</span>
+<span class="text-xs text-[#8c8c8c]">Motor desde $120.000</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Sistema de Encendido y Ajuste Motor (IMAGE_12) -->
+<div class="rounded-xl overflow-hidden bg-[#181313] border border-[#56070c] group hover:border-[#8f3d38] transition-all">
+<div class="h-80 w-full overflow-hidden relative">
+<img alt="Sistema de Encendido y Ajuste Motor SR Detailing Garage" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 filter brightness-95" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8vi02q2XC_5V9iSq6-M0kMZ5KNs_CxbURQYsONf9jJH04wna4NyV-r0RhLgYOYs0v9Al-_0-RxvrUn0BwelkRMmoxoALJ7I83E8RuHR_Jo2jGc2peokjvSRLA6q8bmvQy_4e0c9VKT7E4t7hs8RAS39E8doEwaLvecPbQ6TAyeCAa1XUrl24_OhNqRDcJ0D-Cyy7Sv7jALsLv4XGRFGSsSeQpr3KLbrXqcgI1176gaP-hDtzcSJqUSg">
+<div class="absolute inset-0 bg-gradient-to-t from-[#181313] via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 px-3 py-1 rounded bg-[#56070c]/90 backdrop-blur-sm text-white font-tech text-xs font-bold uppercase tracking-wider border border-[#8f3d38]/50">
+                Mecánica Preventiva
+              </span>
+</div>
+<div class="p-6">
+<h4 class="font-tech text-2xl font-bold uppercase text-white tracking-wide">Afinamiento &amp; Scanner</h4>
+<p class="text-sm text-[#8c8c8c] mt-2">Detección de fallas en tiempo real, bujías de iridio, corrección de pérdidas de potencia y revisión técnica.</p>
+<div class="mt-4 pt-4 border-t border-[#350a06] flex items-center justify-between">
+<span class="text-xs text-[#8f3d38] font-tech uppercase font-bold tracking-wider">Potencia Óptima</span>
+<span class="text-xs text-[#8c8c8c]">Diagnóstico OBD2</span>
+</div>
+</div>
+</div>
+<!-- Card 5: Catálogo Mustang Frontal (IMAGE_9) -->
+<div class="rounded-xl overflow-hidden bg-[#181313] border border-[#56070c] group hover:border-[#8f3d38] transition-all">
+<div class="h-80 w-full overflow-hidden relative">
+<img alt="Mustang GT Tratado con Detailing Premium" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-95" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvt5edS8_8a_mzD6G-l7NHhB-76FN4sodMJSGKVkzcMTYNUoSSZO0_vrOqTRp1wBn31mMpfY-iH3ZchMJ7ZJIwbkylw9waN2cZPE9OGERvajA3Ea9cgnvvFuHMkXF91YHh5vqbNQuCq6NZZucsYkSMIbY0NmS8z3KcIs0ImQxxlvFpwVpII2unuJbRAMw_9Y_3yA-b8CMW-r7iYaY_dowhNJlzmfYuT6c3p_3Dd9h8kOSluLZYIrHTQg">
+<div class="absolute inset-0 bg-gradient-to-t from-[#181313] via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 px-3 py-1 rounded bg-[#56070c]/90 backdrop-blur-sm text-white font-tech text-xs font-bold uppercase tracking-wider border border-[#8f3d38]/50">
+                Corrección de Pintura
+              </span>
+</div>
+<div class="p-6">
+<h4 class="font-tech text-2xl font-bold uppercase text-white tracking-wide">Eliminación de Swirls &amp; Rayas</h4>
+<p class="text-sm text-[#8c8c8c] mt-2">Pulido milimétrico en 3 fases para remover marcas de lavado y devolver la profundidad original al barniz.</p>
+<div class="mt-4 pt-4 border-t border-[#350a06] flex items-center justify-between">
+<span class="text-xs text-[#8f3d38] font-tech uppercase font-bold tracking-wider">Acabado Showroom</span>
+<span class="text-xs text-[#8c8c8c]">Sin Hologramas</span>
+</div>
+</div>
+</div>
+<!-- Card 6: Instagram Direct Banner -->
+<div class="rounded-xl overflow-hidden bg-gradient-to-br from-[#181313] via-[#350a06] to-[#181313] border border-[#56070c] p-8 flex flex-col justify-between shadow-xl">
+<div class="space-y-4">
+<div class="w-14 h-14 rounded-full bg-[#56070c] border border-[#8f3d38] flex items-center justify-center text-white shadow-[0_0_20px_rgba(143,61,56,0.6)]">
+<span class="material-symbols-outlined text-[32px]">photo_camera</span>
+</div>
+<h4 class="font-tech text-3xl font-bold uppercase text-white leading-tight">MÁS DE 200 PROYECTOS EN VIVO</h4>
+<p class="text-sm text-[#e5e5e5] leading-relaxed">
+                Revisa historias diarias, reels del proceso de pulido paso a paso y testimonios de nuestros clientes en Instagram.
+              </p>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-lg bg-white hover:bg-[#e5e5e5] text-[#111111] font-tech font-bold uppercase tracking-wider text-sm transition-all w-full justify-center shadow-lg" href="https://instagram.com/sr_detailing_garage" rel="noopener noreferrer" target="_blank">
+<span class="">Ver @sr_detailing_garage</span>
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- COTIZADOR RÁPIDO & CONTACTO DIRECTO (2 COLUMNAS DE ESCRITORIO WIDE) -->
+<section class="py-20 lg:py-28 relative" id="contacto">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+<!-- Columna Izquierda: Información de Taller & Ubicación -->
+<div class="lg:col-span-5 bg-[#181313] rounded-2xl p-8 lg:p-10 border border-[#56070c] shadow-2xl flex flex-col justify-between space-y-8">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#350a06] border border-[#56070c] text-white">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px]">handyman</span>
+<span class="font-tech text-xs tracking-[0.2em] font-bold uppercase text-[#ffdad6]">ATENCIÓN PERSONALIZADA</span>
+</div>
+<h3 class="font-tech text-3xl lg:text-4xl font-bold uppercase text-white tracking-tight">
+                VISÍTANOS EN NUESTRO TALLER
+              </h3>
+<p class="text-[#8c8c8c] text-sm leading-relaxed">
+                Coordinación ágil y asesoría directa por técnicos especialistas. Trae tu vehículo para una inspección visual sin costo.
+              </p>
+</div>
+<!-- Datos de Contacto -->
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-[#111111] border border-[#56070c] flex items-center justify-center text-[#8f3d38] shrink-0">
+<span class="material-symbols-outlined text-[24px]">location_on</span>
+</div>
+<div>
+<span class="font-tech text-xs tracking-widest text-[#8c8c8c] uppercase block">Dirección Taller</span>
+<span class="font-tech text-lg text-white font-bold block">Arquitecto Brunelleschi #3509</span>
+<span class="text-xs text-[#8c8c8c]">San Joaquín, Santiago, Región Metropolitana</span>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-[#111111] border border-[#56070c] flex items-center justify-center text-[#8f3d38] shrink-0">
+<span class="material-symbols-outlined text-[24px]">calendar_month</span>
+</div>
+<div>
+<span class="font-tech text-xs tracking-widest text-[#8c8c8c] uppercase block">Horario de Taller</span>
+<span class="font-tech text-lg text-white font-bold block">Lunes a Domingo</span>
+<span class="text-xs text-[#8c8c8c]">Atención continua con reserva previa</span>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-[#111111] border border-[#56070c] flex items-center justify-center text-[#8f3d38] shrink-0">
+<span class="material-symbols-outlined text-[24px]">call</span>
+</div>
+<div>
+<span class="font-tech text-xs tracking-widest text-[#8c8c8c] uppercase block">Teléfono / WhatsApp</span>
+<span class="font-tech text-lg text-white font-bold block">+56 9 4570 0131</span>
+<span class="text-xs text-[#8c8c8c]">Respuesta rápida en minutos</span>
+</div>
+</div>
+</div>
+<!-- Mini Mapa Interactivo Stylized Dark -->
+<div class="w-full h-36 rounded-xl overflow-hidden border border-[#56070c] relative bg-[#111111] flex items-end p-4">
+<div class="absolute inset-0 bg-[radial-gradient(#8f3d38_1px,transparent_1px)] [background-size:16px_16px] opacity-20"></div>
+<div class="relative z-10 flex items-center gap-2 text-white bg-[#0c0505]/90 px-3 py-1.5 rounded-lg border border-[#56070c] text-xs font-tech tracking-wider uppercase">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px]">near_me</span>
+<span class="">San Joaquín (Eje Vicuña Mackenna / Departamental)</span>
+</div>
+</div>
+<!-- Botón Grande Contacto -->
+<a class="w-full inline-flex items-center justify-center gap-3 py-4 rounded-xl bg-[#8f3d38] hover:bg-[#a64842] text-white font-tech font-bold uppercase tracking-wider text-base red-glow-btn transition-all" href="https://wa.me/56945700131?text=Hola,%20quisiera%20agendar%20una%20visita%20a%20su%20taller" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+<span class="">Hablar con un Asesor por WhatsApp</span>
+</a>
+</div>
+<!-- Columna Derecha: Formulario de Cotización Inmediata -->
+<div class="lg:col-span-7 bg-[#181313] rounded-2xl p-8 lg:p-10 border border-[#56070c] shadow-2xl flex flex-col justify-between">
+<div>
+<div class="space-y-2 mb-8">
+<h4 class="font-tech text-3xl font-bold uppercase text-white tracking-tight">
+                  COTIZADOR RÁPIDO EN LÍNEA
+                </h4>
+<p class="text-[#8c8c8c] text-sm">
+                  Completa los datos de tu vehículo y serás redirigido a WhatsApp con el mensaje estructurado para recibir tu presupuesto al instante.
+                </p>
+</div>
+<form class="space-y-6" id="quote-form" onsubmit="event.preventDefault(); handleSendWhatsApp();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+<div class="space-y-2">
+<label class="font-tech text-xs tracking-widest text-[#8c8c8c] uppercase block" for="car-brand">
+                      Marca &amp; Modelo *
+                    </label>
+<input class="w-full px-4 py-3 rounded-lg bg-[#111111] border border-[#56070c] focus:border-[#8f3d38] focus:ring-1 focus:ring-[#8f3d38] text-white placeholder-[#666666] text-sm outline-none transition-all" id="car-brand" placeholder="Ej: Chevrolet Camaro / Mazda CX-5" required="" type="text">
+</div>
+<div class="space-y-2">
+<label class="font-tech text-xs tracking-widest text-[#8c8c8c] uppercase block" for="car-year">
+                      Año del Auto *
+                    </label>
+<input class="w-full px-4 py-3 rounded-lg bg-[#111111] border border-[#56070c] focus:border-[#8f3d38] focus:ring-1 focus:ring-[#8f3d38] text-white placeholder-[#666666] text-sm outline-none transition-all" id="car-year" placeholder="Ej: 2022" required="" type="text">
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-tech text-xs tracking-widest text-[#8c8c8c] uppercase block" for="service-req">
+                    Servicio Principal Deseado *
+                  </label>
+<select class="w-full px-4 py-3 rounded-lg bg-[#111111] border border-[#56070c] focus:border-[#8f3d38] focus:ring-1 focus:ring-[#8f3d38] text-white text-sm outline-none transition-all" id="service-req">
+<option value="Sellado Cerámico &amp; Pulido 3 Fases">Sellado Cerámico &amp; Pulido 3 Fases ($150.000+)</option>
+<option value="Pintura de Calipers Alta Temperatura">Pintura de Calipers Alta Temperatura ($60.000)</option>
+<option value="Mantención Automotriz Preventiva (Aceite 5w30 + Filtros)">Mantención Automotriz (Aceite 5w30 + Filtros $110.000+)</option>
+<option value="Lavado de Tapiz al Vapor Profundo">Lavado de Tapiz al Vapor Profundo ($80.000+)</option>
+<option value="Frenos, Discos y Pastillas">Frenos, Discos y Pastillas</option>
+<option value="Pack Integral Completo (Estética + Mecánica)">Pack Integral Completo (Estética + Mecánica)</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-tech text-xs tracking-widest text-[#8c8c8c] uppercase block" for="notes">
+                    Detalles Adicionales o Estado de Pintura / Motor
+                  </label>
+<textarea class="w-full px-4 py-3 rounded-lg bg-[#111111] border border-[#56070c] focus:border-[#8f3d38] focus:ring-1 focus:ring-[#8f3d38] text-white placeholder-[#666666] text-sm outline-none transition-all resize-none" id="notes" placeholder="Indícanos si tiene rayas visibles, si requieres cambio de pastillas o algún síntoma del auto..." rows="4"></textarea>
+</div>
+<button class="w-full inline-flex items-center justify-center gap-3 py-4 rounded-xl bg-gradient-to-r from-[#8f3d38] via-[#a34641] to-[#8f3d38] hover:opacity-95 text-white font-tech font-bold uppercase tracking-widest text-base shadow-[0_0_25px_rgba(143,61,56,0.6)] transition-all" type="submit">
+<span class="material-symbols-outlined text-[22px]">send</span>
+<span class="">Enviar Cotización a WhatsApp</span>
+</button>
+</form>
+</div>
+<!-- Garantía badge mini -->
+<div class="mt-8 pt-6 border-t border-[#350a06] flex items-center justify-between text-xs text-[#8c8c8c]">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#8f3d38] text-[16px]">verified</span>
+                Cotización libre de costos y sin compromiso
+              </span>
+<span class="font-tech uppercase tracking-wider text-[#e5e5e5]">SR Detailing Garage</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- LUXURY DARK FOOTER -->
+<footer class="bg-[#0c0505] border-t border-[#350a06] text-[#8c8c8c] relative z-10">
+<div class="max-w-7xl mx-auto px-6 lg:px-10 py-16">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+<!-- Brand Info -->
+<div class="space-y-4">
+<div class="flex items-center gap-3"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNM3y-cU6IPHNNyBDAoinh3CY7gTZoNWx5CQIjkpTps3GReJATg3WNCMNE3CVgBGsfUsz-Rj7p3BfxwYAR13y31J68t223ZTfu6P19Ehy-MHjVDXf6cL24iz-Vnwh0ePza7hvjZ0gf90SWxFr_uAi7NG1hwj-nQu6YJnH0f4ga7uSOujXjTPLY8SVwvbmvmHWUuHBJC79PALAUP-wcetXGJi_rJxcd6cSZk62xHZbtqOfGGtERYDKU_Q" alt="SR Detailing Garage" class="w-10 h-10 rounded-full object-cover border-2 border-[#8f3d38] shadow-[0_0_12px_rgba(143,61,56,0.4)] shrink-0"><span class="font-tech text-2xl font-bold uppercase tracking-wider text-white">SR DETAILING</span></div>
+<p class="text-sm text-[#8c8c8c] leading-relaxed">
+            Pasión por la perfección automotriz en San Joaquín, Santiago. Servicios profesionales de estética, restauración de pintura, sellados 9H y mecánica integral.
+          </p>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-[#181313] border border-[#56070c] text-white font-tech text-xs uppercase tracking-wider">
+              Santiago, Chile
+            </span>
+<span class="px-2 py-0.5 rounded bg-[#350a06] text-[#ffdad6] font-tech text-xs uppercase tracking-wider">
+              Garantía Pro
+            </span>
+</div>
+</div>
+<!-- Links Rápidos -->
+<div class="space-y-3">
+<h5 class="font-tech text-lg font-bold uppercase text-white tracking-wider">Secciones</h5>
+<ul class="space-y-2 text-sm font-tech tracking-wide uppercase">
+<li class=""><a class="hover:text-[#8f3d38] transition-colors" href="#inicio">Inicio &amp; Presentación</a></li>
+<li class=""><a class="hover:text-[#8f3d38] transition-colors" href="#servicios">Servicios &amp; Tarifas</a></li>
+<li class=""><a class="hover:text-[#8f3d38] transition-colors" href="#garantia">Garantía &amp; Pilares</a></li>
+<li class=""><a class="hover:text-[#8f3d38] transition-colors" href="#trabajos">Galería de Trabajos</a></li>
+<li class=""><a class="hover:text-[#8f3d38] transition-colors" href="#contacto">Cotización WhatsApp</a></li>
+</ul>
+</div>
+<!-- Taller & Horario -->
+<div class="space-y-3">
+<h5 class="font-tech text-lg font-bold uppercase text-white tracking-wider">Taller San Joaquín</h5>
+<div class="text-sm space-y-2">
+<p class="text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px]">location_on</span>
+              Arquitecto Brunelleschi #3509
+            </p>
+<p class="text-xs text-[#8c8c8c]">San Joaquín, Santiago, Chile</p>
+<p class="text-white flex items-center gap-2 pt-2">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px]">schedule</span>
+              Lunes a Domingo
+            </p>
+<p class="text-xs text-[#8c8c8c]">Atención con reserva</p>
+</div>
+</div>
+<!-- Redes y Contacto -->
+<div class="space-y-3">
+<h5 class="font-tech text-lg font-bold uppercase text-white tracking-wider">Redes Sociales</h5>
+<div class="space-y-2 text-sm">
+<a class="flex items-center gap-2.5 text-white hover:text-[#8f3d38] transition-colors" href="https://instagram.com/sr_detailing_garage" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px]">photo_camera</span>
+<span class="">@sr_detailing_garage</span>
+</a>
+<a class="flex items-center gap-2.5 text-white hover:text-[#8f3d38] transition-colors" href="https://wa.me/56945700131" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[#8f3d38] text-[18px]">chat</span>
+<span class="">+56 9 4570 0131</span>
+</a>
+<p class="text-xs text-[#8c8c8c] pt-2">
+              Síguenos para ver videos de antes y después diarios.
+            </p>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-[#1c1515] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+<p class="">© 2024 SR Detailing Garage. Todos los derechos reservados. San Joaquín, Santiago, Chile.</p>
+<span class="font-tech tracking-widest text-[#8c8c8c] uppercase">CUIDAMOS CADA DETALLE, REFLEJAMOS TU PASIÓN</span>
+</div>
+</div>
+</footer>
+<!-- FLOATING WHATSAPP BUTTON (DESKTOP / MOBILE) -->
+<aside class="fixed bottom-8 right-8 z-50">
+<a aria-label="Hablar por WhatsApp con SR Detailing Garage" class="relative flex items-center justify-center w-16 h-16 rounded-full bg-[#8f3d38] hover:bg-[#a64842] text-white shadow-[0_0_30px_rgba(143,61,56,0.8)] transition-all transform hover:scale-110 group" href="https://wa.me/56945700131?text=Hola,%20deseo%20cotizar%20un%20servicio%20para%20mi%20veh%C3%ADculo" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[32px]">chat</span>
+<!-- Pulsing Beacon -->
+<span class="absolute -top-1 -right-1 flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ffb4a9] opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-[#ffdad6]"></span>
+</span>
+<!-- Hover Tooltip -->
+<span class="absolute right-20 bg-[#111111] text-white text-xs font-tech tracking-wider uppercase px-3 py-1.5 rounded-lg border border-[#56070c] whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity shadow-lg">
+        Cotizar Inmediato
+      </span>
+</a>
+</aside>
+<!-- Interactive JavaScript for Quick Quote -->
+<script>
+    function handleSendWhatsApp() {
+      var brand = document.getElementById('car-brand').value;
+      var year = document.getElementById('car-year').value;
+      var service = document.getElementById('service-req').value;
+      var notes = document.getElementById('notes').value;
+
+      var message = "¡Hola SR Detailing Garage! Deseo cotizar:\n\n" +
+        "🚘 Vehículo: " + brand + " (Año " + year + ")\n" +
+        "⚙️ Servicio requerido: " + service + "\n" +
+        (notes ? "📝 Comentarios: " + notes + "\n" : "") +
+        "\n¿Podrían darme información de disponibilidad y presupuesto en taller?";
+
+      var url = "https://wa.me/56945700131?text=" + encodeURIComponent(message);
+      window.open(url, '_blank');
+    }
+  </script>
+
+
+</body></html>

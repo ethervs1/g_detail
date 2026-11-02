@@ -1,0 +1,92 @@
+{
+  "antes-despues-restauracion-focos": {
+    "w": 1200,
+    "h": 800,
+    "sm_w": 640,
+    "sm_h": 427
+  },
+  "mitsubishi-l200-clasica-roja-frontal": {
+    "w": 1200,
+    "h": 1600,
+    "sm_w": 640,
+    "sm_h": 853
+  },
+  "peugeot-suv-gris-frontal": {
+    "w": 1200,
+    "h": 1600,
+    "sm_w": 640,
+    "sm_h": 853
+  },
+  "chevrolet-spin-blanco-frontal": {
+    "w": 1200,
+    "h": 1600,
+    "sm_w": 640,
+    "sm_h": 853
+  },
+  "mitsubishi-lancer-negro-frontal": {
+    "w": 1200,
+    "h": 1600,
+    "sm_w": 640,
+    "sm_h": 853
+  },
+  "mitsubishi-lancer-negro-lateral": {
+    "w": 1200,
+    "h": 1600,
+    "sm_w": 640,
+    "sm_h": 853
+  },
+  "chery-suv-plateado-frontal": {
+    "w": 1024,
+    "h": 1536,
+    "sm_w": 640,
+    "sm_h": 960
+  },
+  "ford-mustang-clasico-entrada-taller": {
+    "w": 1200,
+    "h": 1600,
+    "sm_w": 640,
+    "sm_h": 853
+  },
+  "ford-mustang-clasico-interior": {
+    "w": 1200,
+    "h": 1600,
+    "sm_w": 640,
+    "sm_h": 853
+  },
+  "ford-mustang-clasico-llanta": {
+    "w": 1200,
+    "h": 900,
+    "sm_w": 640,
+    "sm_h": 480
+  },
+  "ford-mustang-clasico-lavado-espuma-frontal": {
+    "w": 1200,
+    "h": 1600,
+    "sm_w": 640,
+    "sm_h": 853
+  },
+  "ford-mustang-clasico-lavado-espuma-lateral": {
+    "w": 1200,
+    "h": 1600,
+    "sm_w": 640,
+    "sm_h": 853
+  },
+  "chevrolet-sail-azul": {
+    "w": 1200,
+    "h": 1600,
+    "sm_w": 640,
+    "sm_h": 853
+  },
+  "mitsubishi-l200-roja-frontal": {
+    "w": 1200,
+    "h": 1600,
+    "sm_w": 640,
+    "sm_h": 853
+  },
+  "bmw-m4-amarillo-detalle-trasero": {
+    "w": 1200,
+    "h": 1600,
+    "sm_w": 640,
+    "sm_h": 853
+  }
+}
